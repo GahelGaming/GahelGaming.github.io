@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Regalo: Flores en Movimiento</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fff1eb, #ace0f9); /* Fondo degradado */
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #ffcc00;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .flower-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        .flower-container img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #ffcc00;
+            border-radius: 50%;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animación de movimiento */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Aquí están tus flores!</h1>
+    <div class="flower-container">
+        <img src="1.jpg" alt="Flor Amarilla">
+        <img src="2.jpg" alt="Otra Flor Amarilla">
+        <img src="3.jpg" alt="Flor Bonita">
+    </div>
+</body>
+</html>
